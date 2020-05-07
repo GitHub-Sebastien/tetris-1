@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu</title>
+    <link rel="stylesheet" href="./build/styles.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="bg-indigo-500">
+    
+    <div class="container mx-auto">
+
+        <div class="grid grid-cols-12">
+            <div class="col-span-3">
+                <div class="h-100 w-3/4 mt-6 rounded-sm text-center bg-indigo-100 text-indigo-700 text-6xl mb-10" id="scoreboard"></div>
+               
+            </div>
+            <div class="col-span-6 rounded-sm bg-indigo-200 border-solid border-r-4 border-l-4 border-indigo-900" id="board">
+                <canvas class="h-full w-full" width="200" height="500" ></canvas>
+            </div>
+            <div class="col-span-3 pt-6">
+                <button class="bg-blue-500 inline-block hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="hard" >
+                    Hard
+                  </button>
+                <button class="bg-blue-500 inline-block hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="normal" >
+                    Normal
+                  </button>
+                  <button class="bg-blue-500 inline-block hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="easy" >
+                    Easy
+                  </button>
+                  <button class="bg-blue-500 inline-block hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" id="easier" >
+                    Easier
+                  </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="./js/model.js"></script>
+    <script type="text/javascript" src="./js/view.js"></script>
+    <script type="text/javascript" src="./js/controller.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
